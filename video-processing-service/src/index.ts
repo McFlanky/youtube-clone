@@ -49,7 +49,7 @@ app.post('/process-video', async (req, res) => {
     return res.status(200).send(`Video processed successfully.`);
 });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000; // Cloud Run sets to 8080
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });

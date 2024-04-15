@@ -72,7 +72,7 @@ export async function uploadProcessedVideo(fileName: string) {
     console.log(
         `${localProcessedVideoPath}/${fileName} uploaded to gs://${processedVideoBucketName}/${fileName}.`
     );
-
+    // making file to processed video public because of GS "Subject to object ACLs"
     await bucket.file(fileName).makePublic();
 }
 
