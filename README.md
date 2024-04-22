@@ -20,7 +20,7 @@ I wanted to create a similar clone to the YouTube application but focusing purel
 
 ## 📒 System Design
 
-Here I will breakdown the choice of features and design for these project and the reasoning behind such:
+Here I will breakdown the choice of features and design for this project and the reasoning behind each:
 ### What we want
   -  Users can sign in/out using Google Auth
   -  Users can upload videos ONLY while signed in
