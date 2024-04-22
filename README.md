@@ -31,7 +31,7 @@ Here I will breakdown the choice of features and design for this project and the
 ### High Level Design
 1) Cloud Storage is going to store and raw and processed videos using FFmpeg to convert all videos to 360p just for testing purposes.
 2) Google Cloud Pub/Sub is used to send messages to the custom video processing service.
-3) Cloud Run will host a <i>non-public<i> video processing service. Then, after those raw videos turn into processed videos and are transcoded, they are uploaded to Google Cloud Storage.
+3) Cloud Run will host a <i>non-public</i> video processing service. Then, after those raw videos turn into processed videos and are transcoded, they are uploaded to Google Cloud Storage.
 4) Cloud Firestore will store the metadata for each video individually.
 5) Cloud Run then will host a Next.js app, which serves as the YouTube web client.
 6) Next.js app will make API calls to Firebase Functions
